@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairgage Builders | Quality Home Transformations in Perth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/header.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .file-input-label {
+            transition: all 0.3s;
+        }
+        
+        .file-input-label:hover {
+            background-color: '#1e3a8a';
+        }
+        
+        /* Logo styling */
+        .logo {
+            height: 50px; /* Adjust based on your logo's aspect ratio */
+            width: auto;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- Logo Image - Replace src with your actual logo file -->
+                        <img src="images/FairgageLogo.png" alt="Fairgage Builders Logo" class="logo">
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium hover:text-accent transition">Services</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:text-accent transition">About</a>
+                        <a href="#gallery" class="px-3 py-2 rounded-md text-sm font-medium hover:text-accent transition">Gallery</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium bg-primary text-white hover:bg-secondary transition">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-primary hover:text-accent focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:text-accent transition">Services</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-accent transition">About</a>
+                <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium hover:text-accent transition">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-primary text-white hover:bg-secondary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rest of your HTML content remains exactly the same -->
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Transforming Perth Homes with Quality Craftsmanship</h1>
+            <p class="text-xl mb-8">From kitchen renovations to complete home extensions, we bring your vision to life with efficiency and precision.</p>
+            <a href="#contact" class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Enquire Here</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Comprehensive Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We offer a full range of building and renovation services to meet all your home improvement needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-utensils text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Kitchen Renovations</h3>
+                        <p class="text-gray-600">Modern, functional kitchen designs that become the heart of your home, crafted with premium materials.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-bath text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Bathroom Makeovers</h3>
+                        <p class="text-gray-600">Luxurious bathroom transformations that combine style with practicality for your daily routine.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-home text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Home Extensions</h3>
+                        <p class="text-gray-600">Seamless additions to your home that enhance living space while maintaining architectural harmony.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-tools text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Home Maintenance</h3>
+                        <p class="text-gray-600">Comprehensive repair services to keep your home in perfect condition year-round.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-bolt text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Electrical Services</h3>
+                        <p class="text-gray-600">Safe, reliable electrical installations and upgrades by certified professionals.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-tree text-6xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Landscaping</h3>
+                        <p class="text-gray-600">Beautiful outdoor spaces designed to complement your home and lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Our Commitment to Perth Homeowners</h2>
+                    <p class="text-lg text-gray-600 mb-6">Fairgage Builders is a comprehensive service provider for Perth homeowners, specializing in kitchen and bathroom renovations, building extensions, home maintenance and repairs, electrical services, landscaping, and more.</p>
+                    <p class="text-lg text-gray-600 mb-8">Our commitment to high-quality, efficient workmanship saves you time while transforming your vision into reality. With over 30 years of combined experience, we understand the unique needs of our clients.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Licensed & Insured</h4>
+                                <p class="text-gray-600">Full accreditation and insurance for your peace of mind.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Local Expertise</h4>
+                                <p class="text-gray-600">Deep understanding of Perth's building regulations and conditions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Quality Materials</h4>
+                                <p class="text-gray-600">We source only the best materials from trusted local suppliers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 rounded-lg overflow-hidden">
+                        <img src="images/glassceiling.jpeg" alt="Building team working" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our scope of works.</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Browse through some of the we do.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/kitchen.jpg" alt="Kitchen renovation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/bathroom.jpg" alt="Bathroom renovation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/extension.jpg" alt="Home extension" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/elec.jpg" alt="Electrical work" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/landscape.jpg" alt="Landscaping project" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/landscape2.jpg" alt="Home maintenance" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-lg max-w-3xl mx-auto">Hear from Perth homeowners who've experienced our quality service firsthand.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">Comments to come</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Client</h4>
+                            <p class="text-sm text-gray-600">Subiaco, Perth</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-accent text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+    <p class="mb-4 italic">"My bathroom and kitchen makeover has completely transformed my daily routine. Gabe's attention to detail was impressive, and he worked within our budget without compromising on quality."</p>
+    <div class="flex items-center">
+        <div class="bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+            <i class="fas fa-user text-gray-600 text-xl"></i>
+        </div>
+        <div>
+            <h4 class="font-bold">Justine M</h4>
+            <p class="text-sm text-gray-600">Palmyra, Perth</p>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonial 3 -->
+<div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+    <div class="flex items-center mb-4">
+        <div class="text-accent text-2xl mr-2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+    <p class="mb-4 italic">"Comments to come"</p>
+    <div class="flex items-center">
+        <div class="bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+            <i class="fas fa-user text-gray-600 text-xl"></i>
+        </div>
+        <div>
+            <h4 class="font-bold">Peter and Karen J</h4>
+            <p class="text-sm text-gray-600">Beelier, Perth</p>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Let us assess your project</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ready to start your home transformation? Fill out the form below and we'll get back to you. Or email us at gabe@fairgage.com.au</p>
+            </div>
+            
+            <form id="enquiryForm" class="bg-gray-50 rounded-lg shadow-md p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name*</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email*</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone*</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed*</label>
+                        <select id="service" name="service" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="">Select a service</option>
+                            <option value="Kitchen Renovation">Kitchen Renovation</option>
+                            <option value="Bathroom Renovation">Bathroom Renovation</option>
+                            <option value="Home Extension">Home Extension</option>
+                            <option value="Home Maintenance">Home Maintenance</option>
+                            <option value="Electrical Services">Electrical Services</option>
+                            <option value="Landscaping">Landscaping</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Project Details*</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-medium mb-2">Attach Photos or Documents</label>
+                    <div class="flex items-center">
+                        <label for="file-upload" class="file-input-label cursor-pointer bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition">
+                            <i class="fas fa-paperclip mr-2"></i>Choose Files
+                        </label>
+                        <input id="file-upload" type="file" name="attachments" multiple class="hidden">
+                        <span id="file-name" class="ml-3 text-gray-600">No files selected</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-2">You can upload multiple files (max 10MB total)</p>
+                </div>
+                
+                <div class="flex items-center mb-6">
+                    <input type="checkbox" id="consent" name="consent" required class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded">
+                    <label for="consent" class="ml-2 block text-gray-700">
+                        I consent to having Fairgage Builders collect my details through this form.
+                    </label>
+                </div>
+                
+                <button type="submit" class="w-full bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-md transition duration-300 flex items-center justify-center">
+                    <i class="fas fa-paper-plane mr-2"></i> Send Enquiry
+                </button>
+                
+                <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                    <i class="fas fa-check-circle mr-2"></i> Thank you! Your enquiry has been submitted successfully. We'll contact you shortly.
+                </div>
+                
+                <div id="formError" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+                    <i class="fas fa-exclamation-circle mr-2"></i> There was an error submitting your form. Please try again or contact us directly.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-hammer text-accent text-2xl mr-2"></i>
+                        <span>Fairgage Builders</span>
+                    </h3>
+                    <p class="text-gray-400">Working in the trades with quality craftsmanship and exceptional service since 2009. Builders Registration BC103971</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kitchen Renovations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bathroom Makeovers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home Extensions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Electrical Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-400">Attadale, Perth WA 6156</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-400">0412 053 542</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-accent mt-1 mr-3"></i>
+                            <span class="text-gray-400">gabe@fairgage.com.au</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Fairgage Builders. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // File input display
+        const fileInput = document.getElementById('file-upload');
+        const fileNameDisplay = document.getElementById('file-name');
+        
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                fileNameDisplay.textContent = `${e.target.files.length} file(s) selected`;
+            } else {
+                fileNameDisplay.textContent = 'No files selected';
+            }
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form submission
+        const enquiryForm = document.getElementById('enquiryForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formError = document.getElementById('formError');
+        
+        enquiryForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // In a real implementation, you would send this data to your server
+            // Here's a simulation of a successful submission
+            try {
+                // Simulate API call delay
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                // Show success message
+                formSuccess.classList.remove('hidden');
+                formError.classList.add('hidden');
+                
+                // Reset form
+                enquiryForm.reset();
+                fileNameDisplay.textContent = 'No files selected';
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formSuccess.classList.add('hidden');
+                }, 5000);
+                
+                // In a real implementation, you would:
+                // 1. Collect all form data including files
+                // 2. Send to your server using fetch or XMLHttpRequest
+                // 3. Have server-side code to process and email the enquiry
+                // 4. Handle success/error responses appropriately
+                
+            } catch (error) {
+                formError.classList.remove('hidden');
+                formSuccess.classList.add('hidden');
+                
+                // Hide error message after 5 seconds
+                setTimeout(() => {
+                    formError.classList.add('hidden');
+                }, 5000);
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
